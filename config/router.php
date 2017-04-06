@@ -2,11 +2,10 @@
 
 return [
     'resources' => [],
-    'apps'      => [    'quod' => [
+    'apps'      => [
+        'quod' => [
             'host' => [
-                '*',
-                '*',
-                'bob.quod',
+                '(.*)',
             ],
         ],
     ],

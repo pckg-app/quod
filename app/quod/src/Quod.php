@@ -1,6 +1,6 @@
 <?php
 
-use Pckg\Framework\Provider
+use Pckg\Framework\Provider;
 
 class Quod extends Provider
 {

@@ -1,14 +1,14 @@
 <?php
 
 return [
-    'app'           => null,
-    'domain'       => null,
-    'title'        => null,
-    'protocol'     => 'http',
-    'security'     => [
-        'hash'   => '',
+    'app'      => null,
+    'domain'   => null,
+    'title'    => null,
+    'protocol' => 'http',
+    'security' => [
+        'hash' => '',
     ],
-    'twig'         => [
+    'twig'     => [
         'cache'   => # requires composer doctrine/cache
             [
                 'driver' => 'Cache\Lib\Doctrine\Common\Cache\PhpFileCache',
@@ -34,7 +34,7 @@ return [
     ],
     'pckg'     => [
         'framework' => [
-            'dev' => [],
+            'dev' => ['127.0.0.1'],
         ],
         'locale'    => [
             'default'  => 'en_GB',
