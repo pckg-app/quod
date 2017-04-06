@@ -1,0 +1,45 @@
+# COMPOSER
+vendor
+components
+
+# BOWER
+bower_components
+
+# WWW
+www/css
+www/js
+www/img
+www/cache
+www/fonts
+www/media
+www/storage
+
+# GIT
+!**/.gitkeep
+
+# STORAGE
+storage/**
+
+# LOGS
+logs/**
+
+# ENV
+app/*/config/env.php
+config/env.php
+
+# DEV -.-
+sublime
+.idea
+phinx.yml
+
+# TESTS ;-)
+tests/_output/*
+tests/acceptance.suite.yml
+tests/_support/_generated/*
+codeception.yml
+
+# PCKG
+pckg.json
+
+# VAGRANT
+.vagrant/**

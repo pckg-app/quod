@@ -1,0 +1,49 @@
+{
+  "name": "pckg/skeleton",
+  "description": "Directory structure, required files and suggestions for /pckg",
+  "homepage": "https://github.com/pckg/skeleton",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Bojan Rajh",
+      "email": "schtr4jh@schtr4jh.net"
+    }
+  ],
+  "require": {
+    "pckg/framework": "dev-master",
+    "pckg/migrator": "dev-master",
+    "pckg/queue": "dev-master",
+    "pckg/mail": "dev-master",
+    "pckg/translator": "dev-master",
+    "pckg/auth": "dev-master",
+    "pckg/generic": "dev-master",
+    "pckg/charts": "dev-master",
+    "pckg/helpers-js": "dev-master",
+    "pckg/helpers-less": "dev-master",
+    "pckg/import": "dev-master",
+    "pckg/payment": "dev-master",
+    "pckg/tempus": "dev-master",
+    "jonnyw/php-phantomjs": "4.*",
+    "nesbot/carbon": "1.*",
+    "twbs/bootstrap": "3.*",
+    "components/jquery": "2.*",
+    "fortawesome/font-awesome": "4.*",
+    "bootstrap-select/bootstrap-select": "1.*",
+    "kraksoft/colorbox": "1.*",
+    "dimsemenov/magnific-popup": "dev-master",
+    "robrichards/xmlseclibs": "^2.0",
+    "aferrandini/phpqrcode": "^1.0",
+    "intervention/image": "^2.3",
+    "league/csv": "^8.1",
+    "icepay/api": "^0.0.1"
+  },
+  "require-dev": {
+    "codeception/codeception": "dev-master"
+  },
+  "minimum-stability": "dev",
+  "scripts": {
+    "post-install-cmd": [
+      "php console project:lock --checkout"
+    ]
+  }
+}
