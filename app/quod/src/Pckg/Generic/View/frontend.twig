@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% include '_head.twig' %}
+
+    <link rel="icon" type="image/png" href="/app/{{ config('app') }}/public/img/favicon.ico"/>
+    <link rel="shortcut icon" href="/app/{{ config('app') }}/public/img/favicon.ico">
+</head>
+<body class="{{ _router.getCssName() }} app-{{ config('app') }}">
+
+{% include '_body.twig' %}
+
+<div id="vue-app" class="container-fluid">
+    <div class="row">
+        <header class="col-xs-12">
+            <nav class="navbar navbar-default">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">Pckg</a>
+                </div>
+            </nav>
+        </header>
+        <div class="col-xs-3">
+            {% block sidebar %}
+                <aside class="position-sidebar">{{ sidebar | raw }}</aside>
+            {% endblock %}
+        </div>
+        <div class="col-xs-9">
+            {% block content %}
+                <main>{{ content | raw }}</main>{% endblock %}
+        </div>
+        <div class="col-xs-12">
+            <footer>
+                {{ footer | raw }}
+            </footer>
+        </div>
+    </div>
+</div>
+
+{% include '_foot.twig' %}
+
+</body>
+</html>
