@@ -1175,7 +1175,7 @@
             ],
             "description": "Provides basic functionality for authentication and authorization users in database, on Twitter, Facebook and with OAuth2 standard",
             "homepage": "https://github.com/pckg/auth",
-            "time": "2017-04-04T12:41:11+00:00"
+            "time": "2017-04-04 12:41:11"
         },
         {
             "name": "pckg/charts",
@@ -1209,7 +1209,7 @@
             ],
             "description": "Bridge for building charts with php using Charts.js javascript library",
             "homepage": "https://github.com/pckg/charts",
-            "time": "2017-03-17T17:49:36+00:00"
+            "time": "2017-03-17 17:49:36"
         },
         {
             "name": "pckg/collection",
@@ -1243,7 +1243,7 @@
             ],
             "description": "Implementation for more human-like dealing with collections",
             "homepage": "https://github.com/pckg/collection",
-            "time": "2017-04-04T11:49:25+00:00"
+            "time": "2017-04-04 11:49:25"
         },
         {
             "name": "pckg/concept",
@@ -1277,7 +1277,7 @@
             ],
             "description": "Simple php concepts",
             "homepage": "https://github.com/pckg/concept",
-            "time": "2017-03-12T22:27:57+00:00"
+            "time": "2017-03-12 22:27:57"
         },
         {
             "name": "pckg/database",
@@ -1319,7 +1319,7 @@
             ],
             "description": "Just another php / orm / pdo implementation for simple and advanced data management",
             "homepage": "https://github.com/pckg/database",
-            "time": "2017-03-30T10:05:19+00:00"
+            "time": "2017-03-30 10:05:19"
         },
         {
             "name": "pckg/framework",
@@ -1327,12 +1327,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pckg/framework.git",
-                "reference": "8fd2e4ab03e07f3781f098a1198ce3f58a24e3c8"
+                "reference": "0d1550cbbddd3daf462672eff44f1ff34f1c53ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pckg/framework/zipball/8fd2e4ab03e07f3781f098a1198ce3f58a24e3c8",
-                "reference": "8fd2e4ab03e07f3781f098a1198ce3f58a24e3c8",
+                "url": "https://api.github.com/repos/pckg/framework/zipball/0d1550cbbddd3daf462672eff44f1ff34f1c53ad",
+                "reference": "0d1550cbbddd3daf462672eff44f1ff34f1c53ad",
                 "shasum": ""
             },
             "require": {
@@ -1366,7 +1366,7 @@
             ],
             "description": "Fully featured lightweight php framework with multilingual support, twig templating engine, and tons of other features.",
             "homepage": "https://github.com/pckg/framework",
-            "time": "2017-04-06T20:51:07+00:00"
+            "time": "2017-04-06 21:56:11"
         },
         {
             "name": "pckg/generic",
@@ -1405,7 +1405,7 @@
             ],
             "description": "Building admin interface and generic frontend made simple",
             "homepage": "https://github.com/pckg/generic",
-            "time": "2017-04-06T08:30:02+00:00"
+            "time": "2017-04-06 08:30:02"
         },
         {
             "name": "pckg/helpers-js",
@@ -1434,7 +1434,7 @@
             ],
             "description": "Basic JS helpers",
             "homepage": "https://github.com/pckg/helpers-js",
-            "time": "2017-03-05T13:11:27+00:00"
+            "time": "2017-03-05 13:11:27"
         },
         {
             "name": "pckg/helpers-less",
@@ -1463,7 +1463,7 @@
             ],
             "description": "Basic LESS helpers",
             "homepage": "https://github.com/pckg/helpers-less",
-            "time": "2016-03-24T18:08:27+00:00"
+            "time": "2016-03-24 18:08:27"
         },
         {
             "name": "pckg/htmlbuilder",
@@ -1508,7 +1508,7 @@
             ],
             "description": "Build advanced forms in php with datasources, decorators, handlers and validators",
             "homepage": "https://bitbucket.org/lfw/htmlbuilder",
-            "time": "2017-03-28T12:41:59+00:00"
+            "time": "2017-03-28 12:41:59"
         },
         {
             "name": "pckg/import",
@@ -1542,7 +1542,7 @@
             ],
             "description": "Import, validate and map imported data from common file formats",
             "homepage": "https://github.com/pckg/import",
-            "time": "2017-03-21T13:36:48+00:00"
+            "time": "2017-03-21 13:36:48"
         },
         {
             "name": "pckg/mail",
@@ -1581,7 +1581,7 @@
             ],
             "description": "Sending mail via local mail server, smtp or api; global implementation of recipients and senders; subscriptions for mailchimp; made simple :)",
             "homepage": "https://github.com/pckg/mail",
-            "time": "2017-04-01T11:05:05+00:00"
+            "time": "2017-04-01 11:05:05"
         },
         {
             "name": "pckg/manager",
@@ -1618,7 +1618,7 @@
             ],
             "description": "Asset management, meta / seo, locale, vue.js and everything else that projects need to manage",
             "homepage": "https://github.com/pckg/manager",
-            "time": "2017-04-04T22:44:00+00:00"
+            "time": "2017-04-04 22:44:00"
         },
         {
             "name": "pckg/migrator",
@@ -1656,7 +1656,7 @@
             ],
             "description": "Database and config migrations made simple",
             "homepage": "https://github.com/pckg/migrator",
-            "time": "2017-03-09T21:37:15+00:00"
+            "time": "2017-03-09 21:37:15"
         },
         {
             "name": "pckg/payment",
@@ -1703,7 +1703,7 @@
                 "proforma",
                 "sepa"
             ],
-            "time": "2017-03-27T15:16:48+00:00"
+            "time": "2017-03-27 15:16:48"
         },
         {
             "name": "pckg/queue",
@@ -1739,7 +1739,7 @@
             ],
             "description": "Queue, cronjobs and tasks simplified",
             "homepage": "https://github.com/pckg/queue",
-            "time": "2017-03-14T15:25:45+00:00"
+            "time": "2017-03-14 15:25:45"
         },
         {
             "name": "pckg/tempus",
@@ -1775,7 +1775,7 @@
             ],
             "description": "Tempus",
             "homepage": "https://github.com/pckg-app/tempus",
-            "time": "2016-12-15T17:03:39+00:00"
+            "time": "2016-12-15 17:03:39"
         },
         {
             "name": "pckg/translator",
@@ -1811,7 +1811,7 @@
             ],
             "description": "Translation service",
             "homepage": "https://github.com/pckg/translator",
-            "time": "2017-03-09T21:37:45+00:00"
+            "time": "2017-03-09 21:37:45"
         },
         {
             "name": "pclzip/pclzip",
