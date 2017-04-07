@@ -1,23 +1,199 @@
 {% extends 'Pckg/Generic/View/frontend.twig' %}
 
 {% block content %}
-    <p>Welcome to pckg documentation.</p>
+    <h1>Pckg</h1>
+    <h2>About</h2>
+    <div>
+        <p>Pckg framework is perfect for building everything. Really. You can build simple website, api webservice, shop
+            or anything that needs to be accessable from internet.</p>
+    </div>
+    <h2>Requirements</h2>
+    <div>
+        <p>
+        <ul>
+            <li>php7 (with intl, bcmath, gd and curl extensions)</li>
+            <li>apache2 (with mod rewrite) / nginx (for web usage :))</li>
+            <li>mysql (optional)</li>
+            <li>composer, npm and bower (optional)</li>
+        </ul>
+        </p>
+        <p>Note: You can install all requirements via <a href="#">impero</a> in few seconds.</p>
+    </div>
+    <h2>Installation</h2>
+    <div>
+        <p>The shortest, quickes and easiest way to start with development in pckg enviroment is installation of <a
+                    href="#" class="vendor">pckg/skeleton</a>.</p>
+        <p class="code bash">$ composer create-project pckg/skeleton . dev-master --prefer-dist</p>
 
-    <p><b>Starting project:</b>
-    <p>$ composer create-project pckg/skeleton . dev-master --prefer-dist –dev<br/>
-        $ php console project:init<br/>
-        $ bower update<br/>
-        $ npm update</p>
+        <p>You should also install frontend dependencies.</p>
+        <p class="code bash">
+            $ bower update<br/>
+            $ npm update
+        </p>
 
-    <p><b>Create git repository</b></p>
-    <p>$ git init .</p>
+        <p>All empty directories and symlinks are then created with internal command.</p>
+        <p class="code bash">$ php console project:init</p>
 
-    <p><b>Add git remote</b></p>
-    <p>$ git remote add origin git@github.com:foo/bar.git
+        <p>You can start with development after app creation.</p>
+        <p class="code bash">$ php console app:create</p>
 
-    <p><b>Create initial commit</b></p>
-    <p>$ gac “Initial commit”</p>
+        <p>Optionally, you can initialize git repository, remote and commit initial changes.</p>
+        <p class="code bash">
+            $ git init .<br/>
+            $ git remote add origin git@github.com:foo/bar.git<br/>
+            $ gac “Initial commit”
+        </p>
+        <p>Note: <span class="command">gac</span> is alias for <span
+                    class="command">git add . --all && git commit -am</span></p>
+    </div>
 
-    <p><b>Create new app</b></p>
-    <p>$ php console app:create</p>
+    <h2>Configuration</h2>
+    <div>
+        <p>There's really only usual stuff that needs to be done and that's virtualhost configuration. You can manage it
+            via <a href="#">impero</a> or manually add it to apache / nginx virtualhost configuration.</p>
+    </div>
+
+    <h2>Directory structure</h2>
+    <div>
+        <ul>
+            <li>vendor, components, bower_components and node_modules - dependency managers directories</li>
+            <li>config - root project configuration</li>
+            <li>www - directory that will be exposed to the internet</li>
+            <li>storage - directory for framework, cache, uploads, tmp and other files</li>
+            <li>app/config - app configuration</li>
+            <li>app/src - app source files</li>
+        </ul>
+    </div>
+
+    <h2>Request timeline</h2>
+    <div>
+        <p>Whole website or application is executed in few simple steps.</p>
+        <p>
+        <ul>
+            <li>Create context</li>
+            <li>Create environment
+                <ul>
+                    <li>Error reporting</li>
+                    <li>Exception handling</li>
+                    <li>Path definition</li>
+                    <li>Load root config</li>
+                </ul>
+            </li>
+            <li>Create, init and run app
+                <ul>
+                    <li>Parse app config</li>
+                    <li>Set localization</li>
+                    <li>Init database connections and routing</li>
+                    <li>Register main provider</li>
+                    <li>Init session, response, request and assets</li>
+                    <li>Run request - <b>this is only thing you need to take care of :)</b></li>
+                    <li>Return response</li>
+                </ul>
+            </li>
+        </ul>
+        </p>
+    </div>
+
+    <h1>Framework</h1>
+    <div>
+        <a class="repository" href="https://github.com/pckg/framework" target="_blank">@github</a>
+    </div>
+
+    <h2>Environments</h2>
+    <h3>Production</h3>
+    <h3>Development</h3>
+    <h3>Console</h3>
+
+    <h2>Request</h2>
+    <h3>Get</h3>
+    <h3>Post</h3>
+    <h3>Cookie</h3>
+    <h3>Session</h3>
+    <h3>Flash</h3>
+    <h3>Server</h3>
+
+    <h2>Response</h2>
+    <h3>HTML</h3>
+    <h3>JSON / Ajax</h3>
+
+    <h2>Urls and routing</h2>
+    <h3>Routes</h3>
+    <h3>Groups</h3>
+    <h3>Resolvers</h3>
+
+    <h2>Controllers</h2>
+    <h3>Actions</h3>
+    <h3>Middlewares</h3>
+    <h3>Afterwares</h3>
+
+    <h2>Templating</h2>
+    <h3>Twig</h3>
+    <h3>PHP</h3>
+
+    <h2>Providers</h2>
+    <h3>Routes</h3>
+    <h3>Autoloaders</h3>
+    <h3>Classmaps</h3>
+    <h3>Providers</h3>
+    <h3>Apps</h3>
+    <h3>Consoles</h3>
+    <h3>Assets</h3>
+    <h3>Paths</h3>
+    <h3>Middlewares</h3>
+    <h3>Afterwares</h3>
+    <h3>View objects</h3>
+    <h3>Listeners</h3>
+    <h3>Jobs</h3>
+
+    <h2>Events</h2>
+    <h3>Dispatcher</h3>
+    <h3>Listeners</h3>
+
+    <h2>Commands</h2>
+    <h2>Console</h2>
+    <h2>Cache</h2>
+    <h2>Config</h2>
+    <h2>Localization</h2>
+    <h2>Internationalization</h2>
+
+    <h1>Collection</h1>
+
+    <h1>Database</h1>
+    <h2>Configuration</h2>
+    <h2>Repository</h2>
+    <h3>PDO</h3>
+    <h3>Faker</h3>
+    <h3>Custom</h3>
+    <h2>Entity</h2>
+    <h2>Record</h2>
+    <h2>Relation</h2>
+    <h2>Field</h2>
+    <h2>Query</h2>
+    <h2>Extensions</h2>
+
+    <h1>Manager</h1>
+    <h2>Asset</h2>
+    <h2>Locale</h2>
+    <h2>Cache</h2>
+    <h2>Gtm</h2>
+    <h2>Job</h2>
+    <h2>Meta</h2>
+    <h2>Page</h2>
+    <h2>Seo</h2>
+    <h2>Upload</h2>
+    <h2>Vue</h2>
+
+    <h1>Migrator</h1>
+    <h2>Database</h2>
+    <h2>Config</h2>
+    <h2>Data</h2>
+
+    <h1>Queue</h1>
+    <h2>Job</h2>
+    <h2>Queue</h2>
+    <h2>Cron</h2>
+
+    <h1>Translator</h1>
+
+    <h1>Mail</h1>
 {% endblock %}
