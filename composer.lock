@@ -371,12 +371,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fzaninotto/Faker.git",
-                "reference": "5e71e74abf072c3c708099a304c4ff14b1e75b55"
+                "reference": "bd5580a1ca86bd32a8f72f9b47f273aab3ef90f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/5e71e74abf072c3c708099a304c4ff14b1e75b55",
-                "reference": "5e71e74abf072c3c708099a304c4ff14b1e75b55",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/bd5580a1ca86bd32a8f72f9b47f273aab3ef90f7",
+                "reference": "bd5580a1ca86bd32a8f72f9b47f273aab3ef90f7",
                 "shasum": ""
             },
             "require": {
@@ -413,7 +413,7 @@
                 "faker",
                 "fixtures"
             ],
-            "time": "2017-04-06T20:52:54+00:00"
+            "time": "2017-04-07 07:05:49"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -1217,12 +1217,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pckg/collection.git",
-                "reference": "2132c07d05c445f7a9cd757269fef43ebbd4ff41"
+                "reference": "6b45cf8e5a696e1b99e9739c7a0a0e3c1dc2e337"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pckg/collection/zipball/2132c07d05c445f7a9cd757269fef43ebbd4ff41",
-                "reference": "2132c07d05c445f7a9cd757269fef43ebbd4ff41",
+                "url": "https://api.github.com/repos/pckg/collection/zipball/6b45cf8e5a696e1b99e9739c7a0a0e3c1dc2e337",
+                "reference": "6b45cf8e5a696e1b99e9739c7a0a0e3c1dc2e337",
                 "shasum": ""
             },
             "type": "library",
@@ -1243,7 +1243,7 @@
             ],
             "description": "Implementation for more human-like dealing with collections",
             "homepage": "https://github.com/pckg/collection",
-            "time": "2017-04-04 11:49:25"
+            "time": "2017-04-07 01:16:40"
         },
         {
             "name": "pckg/concept",
@@ -1327,12 +1327,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pckg/framework.git",
-                "reference": "0d1550cbbddd3daf462672eff44f1ff34f1c53ad"
+                "reference": "e32047c352d33a5a234d2722ba6f06a8c7cd07c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pckg/framework/zipball/0d1550cbbddd3daf462672eff44f1ff34f1c53ad",
-                "reference": "0d1550cbbddd3daf462672eff44f1ff34f1c53ad",
+                "url": "https://api.github.com/repos/pckg/framework/zipball/e32047c352d33a5a234d2722ba6f06a8c7cd07c1",
+                "reference": "e32047c352d33a5a234d2722ba6f06a8c7cd07c1",
                 "shasum": ""
             },
             "require": {
@@ -1366,7 +1366,7 @@
             ],
             "description": "Fully featured lightweight php framework with multilingual support, twig templating engine, and tons of other features.",
             "homepage": "https://github.com/pckg/framework",
-            "time": "2017-04-06 21:56:11"
+            "time": "2017-04-07 12:53:51"
         },
         {
             "name": "pckg/generic",
@@ -1374,12 +1374,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pckg/generic.git",
-                "reference": "ef6448c76619840651a36419a881bc79e7f9552b"
+                "reference": "be4899bef23ce01c4b9b2af822a48d6d195f5cc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pckg/generic/zipball/ef6448c76619840651a36419a881bc79e7f9552b",
-                "reference": "ef6448c76619840651a36419a881bc79e7f9552b",
+                "url": "https://api.github.com/repos/pckg/generic/zipball/be4899bef23ce01c4b9b2af822a48d6d195f5cc1",
+                "reference": "be4899bef23ce01c4b9b2af822a48d6d195f5cc1",
                 "shasum": ""
             },
             "require": {
@@ -1405,7 +1405,7 @@
             ],
             "description": "Building admin interface and generic frontend made simple",
             "homepage": "https://github.com/pckg/generic",
-            "time": "2017-04-06 08:30:02"
+            "time": "2017-04-07 12:06:29"
         },
         {
             "name": "pckg/helpers-js",
@@ -1589,12 +1589,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pckg/manager.git",
-                "reference": "b868831f7885c235cd6436105ab719155e06cfd5"
+                "reference": "d41d2a4c451500e9ae560b93157a33df92a30539"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pckg/manager/zipball/b868831f7885c235cd6436105ab719155e06cfd5",
-                "reference": "b868831f7885c235cd6436105ab719155e06cfd5",
+                "url": "https://api.github.com/repos/pckg/manager/zipball/d41d2a4c451500e9ae560b93157a33df92a30539",
+                "reference": "d41d2a4c451500e9ae560b93157a33df92a30539",
                 "shasum": ""
             },
             "require": {
@@ -1618,7 +1618,7 @@
             ],
             "description": "Asset management, meta / seo, locale, vue.js and everything else that projects need to manage",
             "homepage": "https://github.com/pckg/manager",
-            "time": "2017-04-04 22:44:00"
+            "time": "2017-04-07 11:47:19"
         },
         {
             "name": "pckg/migrator",
@@ -1626,12 +1626,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pckg/migrator.git",
-                "reference": "6f2290c298fdcb3fd6616112205f2477afbdceb4"
+                "reference": "4d9842d96a21a3fa06f15e1d2a6faaf7d09d8fcb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pckg/migrator/zipball/6f2290c298fdcb3fd6616112205f2477afbdceb4",
-                "reference": "6f2290c298fdcb3fd6616112205f2477afbdceb4",
+                "url": "https://api.github.com/repos/pckg/migrator/zipball/4d9842d96a21a3fa06f15e1d2a6faaf7d09d8fcb",
+                "reference": "4d9842d96a21a3fa06f15e1d2a6faaf7d09d8fcb",
                 "shasum": ""
             },
             "require": {
@@ -1656,7 +1656,7 @@
             ],
             "description": "Database and config migrations made simple",
             "homepage": "https://github.com/pckg/migrator",
-            "time": "2017-03-09 21:37:15"
+            "time": "2017-04-07 01:25:39"
         },
         {
             "name": "pckg/payment",
@@ -2592,12 +2592,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dependency-injection.git",
-                "reference": "6bdd2ad00969d837a8adcc66980e3ef7b75114fa"
+                "reference": "768923378b1925bfe97870c25ca035600f025308"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/6bdd2ad00969d837a8adcc66980e3ef7b75114fa",
-                "reference": "6bdd2ad00969d837a8adcc66980e3ef7b75114fa",
+                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/768923378b1925bfe97870c25ca035600f025308",
+                "reference": "768923378b1925bfe97870c25ca035600f025308",
                 "shasum": ""
             },
             "require": {
@@ -2654,7 +2654,7 @@
             ],
             "description": "Symfony DependencyInjection Component",
             "homepage": "https://symfony.com",
-            "time": "2017-04-06T09:28:30+00:00"
+            "time": "2017-04-07 06:15:11"
         },
         {
             "name": "symfony/filesystem",

@@ -11,7 +11,7 @@
     <div>
         <p>
         <ul>
-            <li>php7 (with intl, bcmath, gd and curl extensions)</li>
+            <li>php7 (with intl, bcmath, gd, zip and curl extensions)</li>
             <li>apache2 (with mod rewrite) / nginx (for web usage :))</li>
             <li>mysql (optional)</li>
             <li>composer, npm and bower (optional)</li>
@@ -200,13 +200,120 @@
         </ul>
     </div>
     <h3>Routes</h3>
+    <div>
+        <p>Routes can be easily defined in any provider:</p>
+        <p class="code php pre">
+            public function routes() {
+            return [
+            new \Pckg\Framework\Router\Route\Route('/foo', 'foo', \Foo\Controller\Bar::class),
+            new \Pckg\Framework\Router\Route\Route('/bar', 'bar', \Foo\Controller\Bar::class),
+            ];
+            }
+        </p>
+    </div>
     <h3>Groups</h3>
+    <div>
+        <p>When sharing same parameters, they can be easily grouped:</p>
+        <p class="code php pre">
+            public function routes() {
+            return [
+            (new \Pckg\Framework\Router\Route\Group(['controller' => \Foo\Controller\Bar::class]))
+            ->routes([
+            new \Pckg\Framework\Router\Route\Route('/foo', 'foo'),
+            new \Pckg\Framework\Router\Route\Route('/bar', 'bar'),
+            ])
+            ];
+            }
+        </p>
+    </div>
     <h3>Resolvers</h3>
+    <div>
+        <p>Common usage is with named route parameters:</p>
+        <p class="code php pre">
+            public function routes() {
+            return [
+            (new \Pckg\Framework\Router\Route\Route('/foo/[bar]', 'foo', \Foo\Controller\Bar::class))
+            ->resolvers([
+            'bar' => \Foo\Resolver\Bar::class,
+            ]),
+            ];
+            }
+        </p>
+        <p>... and then implementing resolver:</p>
+        <p class="code php pre">
+            class Bar extends \Pckg\Framework\Router\RouteResolver {
+
+            public function resolve($value) {
+            return (new Foos())->where('id', $value)->withPermissionsToRead()->oneOrFail();
+            }
+
+            public function parametrize($record) {
+            return $record->id;
+            }
+
+            }
+        </p>
+    </div>
 
     <h2>Controllers</h2>
     <h3>Actions</h3>
+    <div>
+        <p>Each actions is prefixed with request method and suffixed with 'Action'. For example, when user makes
+            <span class="command">GET</span> request on <span class="command">foo</span> action,
+            <span class="command">getFooAction()</span> is called.</p>
+    </div>
     <h3>Middlewares</h3>
+    <div>
+        <p>Middlewares are nothing else than simple filters or commands that get executed before controller action gets
+            called. You can use them for restricting access, check for autologin cookie, log requests or in any other
+            way. All you have to do is implement <span class="command">execute(callable $next)</span> method and return
+            <span class="command">$next()</span> if you want to continue with execution.</p>
+        <p>With bottom example we restrict remote access and allow only access from localhost.</p>
+        <p class="code php pre">
+            class RestrictAccess {
+            public function execute() {
+            if (server('REMOTE_ADDR') != '127.0.0.1') {
+            return;
+            }
+
+            return $next();
+            }
+            }
+        </p>
+        <p>They can be defined on application / provider level:</p>
+        <p class="code php pre">
+            public function middlewares() {
+            return [
+            RestrictAccess::class,
+            ];
+            }
+        </p>
+        <p>... or route level:</p>
+        <p class="code php pre">
+            public function routes() {
+            return [
+            (new Route('/route', 'action', Controller::class))
+            ->middlewares([RestrictAccess::class]):
+            ];
+            }
+        </p>
+    </div>
     <h3>Afterwares</h3>
+    <div>
+        <p>The only difference with middlewares is that afterwares gets executed after controller action. Afterwares
+            could be used for logging or enriching responses.</p>
+        <p class="code php pre">
+            class LogEmptyRequest {
+            public function execute() {
+            $output = response()->getOutput();
+            if ($output) {
+            Foo::bar();
+            }
+            return $next();
+            }
+            }
+        </p>
+    </div>
 
     <h2>Templating</h2>
     <div>
@@ -215,10 +322,22 @@
         </ul>
     </div>
     <h3>Twig</h3>
+    <div>
+        <p><a href="#" class="external">Twig</a> is default templating engine used in framework.</p>
+    </div>
     <h3>PHP</h3>
+    <div>
+        <p>Raw PHP templating can be enabled manually.</p>
+    </div>
 
     <h2>Providers</h2>
+    <div>
+        <p>Providers collects different objects, files and other things that are logically connected and needed to
+            provide some functionality. Many aspects of framework are designed as providers, for example
+            <a href="#" class="more">Environment</a> and <a href="#" class="more">Application</a>.</p>
+    </div>
     <h3>Routes</h3>
+    <div></div>
     <h3>Autoloaders</h3>
     <h3>Classmaps</h3>
     <h3>Providers</h3>
