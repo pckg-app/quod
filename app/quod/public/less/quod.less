@@ -15,16 +15,22 @@
     &.code {
       margin-bottom: 2rem;
       &.bash {
-        border: 1px solid #ddd;
         background: #eee;
         color: #333;
         border-radius: 1rem;
         padding: .666rem;
       }
     }
+    &.note {
+      padding: 2rem;
+      background: #eee;
+      color: #333;
+    }
   }
   span {
-    &.command {
+    &.command,
+    &.file,
+    &.class {
       border-radius: 1rem;
       padding: .2rem .5rem;
       border: 1px solid #ddd;
@@ -32,10 +38,37 @@
     }
   }
   a {
-    &.vendor {
-      color: white;
-      background: navy;
-      padding: .2rem;
+    &.vendor,
+    &.external,
+    &.more {
+      border-radius: 1rem;
+      padding: .2rem .5rem;
+      border: 1px solid #ddd;
+      background: #eee;
+    }
+  }
+  ul {
+    &.related {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      &:before,
+      &:after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+      li {
+        margin: 0 1rem 0 0;
+        padding: 0;
+        float: left;
+        a {
+          border-radius: 1rem;
+          padding: .2rem .5rem;
+          border: 1px solid #ddd;
+          background: #eee;
+        }
+      }
     }
   }
 }
