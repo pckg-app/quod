@@ -210,6 +210,9 @@
             ];
             }
         </p>
+        <ul class="related">
+            <li><a href="#">route()</a></li>
+        </ul>
     </div>
     <h3>Groups</h3>
     <div>
@@ -225,6 +228,9 @@
             ];
             }
         </p>
+        <ul class="related">
+            <li><a href="#">routeGroup()</a></li>
+        </ul>
     </div>
     <h3>Resolvers</h3>
     <div>
@@ -421,6 +427,11 @@
         </ul>
     </div>
     <h2>Cache</h2>
+    <div>
+        <ul class="related">
+            <li><a href="#">cache()</a></li>
+        </ul>
+    </div>
     <h2>Gtm</h2>
     <h2>Job</h2>
     <h2>Meta</h2>
@@ -462,4 +473,23 @@
             <li><a href="#">mail()</a></li>
         </ul>
     </div>
+
+    <h1>Deployment</h1>
+    <div>
+        <p>Check awesome service we've build, <a href="#">condo</a>. It's capable of preparing releases from multiple
+            branches, automatically version them, trigger webhooks, comment trello cards about activity and many more.
+        </p>
+        <p>Otherwise it's really simple to deploy app. Deployment is available via command
+            <span class="command">php console project:deploy --remote=remotes</span> which estamblishes SSH connection
+            listed in <span class="command">pckg.deploy.remotes</span> config and executes
+            <span class="command">php console project:pull</span> and
+            <span class="command">php console migrator:install</span>.</p>
+    </div>
+
+    <h1>Testing</h1>
+    <h2>Codeception</h2>
+    <h2>Pipelines</h2>
+    <h2>Circle CI</h2>
+    <h2>Travis CI</h2>
+    <h2>Jenkins</h2>
 {% endblock %}
