@@ -28,13 +28,6 @@ class Quod extends Provider
         ];
     }
 
-    public function middlewares()
-    {
-        return [
-            RegisterCoreAssets::class,
-        ];
-    }
-
     public function routes()
     {
         return [
@@ -45,6 +38,7 @@ class Quod extends Provider
     public function assets()
     {
         return [
+            '/vendor/pckg/helpers-less/boot/_all.less',
             'less/quod.less',
         ];
     }

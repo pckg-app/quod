@@ -1,9 +1,7 @@
-# COMPOSER
+# PACKAGE MANAGERS
 vendor
 components
-
-# BOWER
-bower_components
+node_modules
 
 # WWW
 www/css
